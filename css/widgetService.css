@@ -1,0 +1,340 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,300');
+.simaMesseContainer .messeninfoTile {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.simaMesseContainer .messeninfoTile .inner {
+    background-color: #f6f8f3;
+}
+.simaMesseContainer .messeninfoTile .tileHeader {
+    background-color: #add1a0;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+.simaMesseContainer .messeninfoTile .tileHeader .nextPic,
+.simaMesseContainer .messeninfoTile .tileHeader .prevPic {
+    position: absolute;
+    height: 24px;
+    width: 13px;
+    top: 50%;
+    margin-top: -12px;
+    cursor: pointer;
+    z-index: 10;
+    text-indent: -99999px;
+    background-image: url('images/hotel_arrows.png');
+}
+.simaMesseContainer .messeninfoTile .tileHeader .nextPic {
+    right: 5px;
+    background-position: -59px 0px;
+}
+.simaMesseContainer .messeninfoTile .tileHeader .prevPic {
+    left: 5px;
+    background-position: -26px 0px;
+}
+.simaMesseContainer .messeninfoTile .tileHeader .messeLogo {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    z-index: 50;
+    width: 90px;
+    height: 90px;
+    background-color: #f6f8f3;
+}
+.simaMesseContainer .messeninfoTile .tileHeader .headBottom {
+    z-index: 1000;
+}
+.simaMesseContainer .messeninfoTile .tileHeader .headBottom .time {
+    margin: 0px;
+    display: block;
+    padding: 7px 0 7px 10px;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: left;
+    font-weight: normal;
+    color: #31582b;
+}
+.simaMesseContainer .messeninfoTile .tileHeader a:link,
+.simaMesseContainer .messeninfoTile .tileHeader a:visited {
+    text-decoration: none;
+    color: #5f8062;
+    font-weight: 600;
+    position: relative;
+}
+.simaMesseContainer .messeninfoTile .tileHeader a:link .overlay,
+.simaMesseContainer .messeninfoTile .tileHeader a:visited .overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173,209,160,0.4);
+    transition: opacity 0.4s linear;
+}
+.simaMesseContainer .messeninfoTile .tileHeader a:hover {
+    color: #5f8062;
+}
+.simaMesseContainer .messeninfoTile .tileHeader a:hover .overlay {
+    opacity: 0;
+}
+.simaMesseContainer .messeninfoTile .tileHeader .pictureContainer {
+    background-size: cover;
+    background-position: center center;
+}
+.simaMesseContainer .messeninfoTile .tileHeader .moodPicture {
+    width: auto;
+    height: auto;
+    max-width: 285px;
+    margin: 0px;
+    display: block;
+}
+.simaMesseContainer .messeninfoTile .moodPictureContainer2 {
+    display: block;
+    background-position: center center;
+    background-size: cover;
+}
+.simaMesseContainer .messeninfoTile .moodPictureContainer2 .moodPicture {
+    opacity: 0;
+}
+.simaMesseContainer .messeninfoTile .tileMeta {
+    padding: 5px 10px 10px 10px;
+    position: relative;
+}
+.simaMesseContainer .messeninfoTile .title {
+    font-size: 21px;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: normal;
+    width: auto !important;
+}
+.simaMesseContainer .messeninfoTile a.title:hover {
+    color: #135666;
+}
+.simaMesseContainer .messeninfoTile .description,
+.simaMesseContainer .messeninfoTile p {
+    font-size: 13px;
+    margin-top: 0px;
+}
+.simaMesseContainer .messeninfoTile .description,
+.simaMesseContainer .messeninfoTile .zutritt {
+    margin-bottom: 5px;
+    padding-right: 20px;
+    height: 18px;
+    padding-top: 0px;
+    overflow: hidden;
+    line-height: 18px !important;
+}
+.simaMesseContainer .messeninfoTile .description {
+    height: 30px;
+    line-height: 14px !important;
+}
+.simaMesseContainer .messeninfoTile .zutritt {
+    margin-top: 2px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.simaMesseContainer .messeninfoTile .messeTerminLocation {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: normal;
+}
+.simaMesseContainer .messeninfoTile .messeTerminLocation .flag {
+    float: right;
+    margin-top: 10px;
+}
+.simaMesseContainer .messeninfoTile .messeTerminLocation .flag img {
+    height: 27px;
+    width: auto;
+}
+.simaMesseContainer .messeninfoTile .messeTerminLocation .messeTerminZentrum {
+    display: block;
+    width: auto;
+    padding-right: 10px;
+}
+.simaMesseContainer .messeninfoTile .messeTerminLocation .messeTerminZentrum a:link,
+.simaMesseContainer .messeninfoTile .messeTerminLocation .messeTerminZentrum a:visited {
+    color: #0B5C75;
+    text-decoration: none;
+}
+.simaMesseContainer .messeninfoTile .messeTerminLocation .messeTerminZentrum a:hover {
+    color: #93c3d1;
+}
+.simaMesseContainer .messeninfoTile .messeTerminLocation .messeTerminLocationOrtContainer {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.simaMesseContainer .messeninfoTile .extraMeta {
+    height: 55px;
+}
+.simaMesseContainer .messeninfoTile .extraMeta .halle,
+.simaMesseContainer .messeninfoTile .extraMeta .stand,
+.simaMesseContainer .messeninfoTile .extraMeta .freikarten {
+    float: left;
+    text-align: center;
+    margin-right: 5px;
+}
+.simaMesseContainer .messeninfoTile .extraMeta .halle,
+.simaMesseContainer .messeninfoTile .extraMeta .stand {
+    padding: 0 2px;
+}
+.simaMesseContainer .messeninfoTile .extraMeta .freikarten {
+    float: right;
+    margin-right: 0px !important;
+}
+.simaMesseContainer .messeninfoTile .extraMeta .freikarten .button {
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    cursor: pointer;
+    width: 78px;
+    height: 40px;
+    background: none;
+    background-color: transparent;
+    background-image: url('images/free-ticket.png');
+    background-size: contain;
+    text-align: center;
+    margin-right: 0px !important;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+.simaMesseContainer .messeninfoTile .extraMeta .freikarten .button i {
+    background-image: url('images/arrows.png');
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    width: 20px;
+    height: 100%;
+    background-position: 7px -26px;
+}
+.simaMesseContainer .messeninfoTile .extraMeta .freikarten .button:hover {
+    opacity: 0.8;
+}
+.simaMesseContainer .messeninfoTile .extraMeta .label {
+    font-size: 10px;
+    display: block;
+    color: #333;
+}
+.simaMesseContainer .messeninfoTile .extraMeta .value {
+    font-size: 24px;
+    line-height: 22px;
+    color: #5f8062;
+}
+.simaMesseContainer .messeninfoTile.active .tileHeader {
+    background-color: #93c3d1;
+}
+.simaMesseContainer .messeninfoTile.active .tileHeader a:link .overlay,
+.simaMesseContainer .messeninfoTile.active .tileHeader a:visited .overlay {
+    background-color: rgba(147,195,209,0.4);
+}
+.simaMesseContainer .messeninfoTile.active .tileHeader .time {
+    color: #135666;
+}
+.simaMesseContainer .messeninfoTile.active .inner {
+    background-color: #eaf4f6;
+}
+@media screen and (max-width: 849px) {
+    .simaMesseContainer .messeninfoTile {
+        display: inline-block;
+        min-width: 200px;
+        width: 50%;
+        float: left;
+    }
+    .simaMesseContainer .messeninfoTile .tileHeader .moodPicture {
+        max-width: 600px;
+        max-height: 600px;
+        width: 100%;
+        height: auto;
+    }
+    .simaMesseContainer .messeninfoTile .title {
+        height: 54px;
+        overflow: hidden;
+    }
+    .simaMesseContainer .messeninfoTile .description {
+        height: 40px;
+    }
+    .simaMesseContainer .messeninfoTile .extraMeta .value {
+        font-size: 19px;
+    }
+    .simaMesseContainer .messeninfoTile .messeTerminLocation .messeTerminLand {
+        display: none;
+    }
+    .simaMesseContainer .messeninfoTile .messeTerminLocation .messeTerminZentrum {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 500px) {
+    .simaMesseContainer .messeninfoTile {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 825px) {
+    .simaMesseContainer.tilesAndStripes .messeninfoTile {
+        height: 194px;
+        overflow: hidden;
+    }
+    .simaMesseContainer.tilesAndStripes .messeninfoTile .tileHeader {
+        float: left;
+    }
+    .simaMesseContainer.tilesAndStripes .messeninfoTile .tileMeta {
+        padding-left: 300px;
+        padding-top: 5px;
+    }
+    .simaMesseContainer.tilesAndStripes .messeninfoTile .title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }
+    .simaMesseContainer.tilesAndStripes .messeninfoTile .description {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 850px) {
+    .simaMesseContainer.tilesOnly .messeninfoTile {
+        display: inline-block;
+        min-width: 270px;
+        width: 33.333333333333%;
+        max-width: 350px;
+        float: left;
+    }
+    .simaMesseContainer.tilesOnly .messeninfoTile .title {
+        height: 50px;
+        overflow: hidden;
+        line-height: 24px;
+        display: block;
+    }
+    .simaMesseContainer.tilesOnly .messeninfoTile .description {
+        margin-bottom: 0px;
+        height: 40px;
+    }
+    .simaMesseContainer.tilesOnly .messeninfoTile .tileHeader .moodPicture {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    .simaMesseContainer.tilesOnly .messeninfoTile .messeTerminLocation .messeTerminLand {
+        display: none;
+    }
+    .simaMesseContainer.tilesOnly .messeninfoTile .messeTerminLocation .messeTerminZentrum {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 1120px) {
+    .simaMesseContainer.tilesOnly .messeninfoTile {
+        width: 25%;
+    }
+}
+
